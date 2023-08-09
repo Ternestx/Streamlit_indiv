@@ -38,9 +38,12 @@ session = Session.builder.configs(connection_parameters).create()
 st.set_page_config(page_title='ICP ASG 3', page_icon="favicon.ico")
 
 # Tabs set-up
-tab1 = st.tabs(['Ernest [Predicting Customer Spending]'])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(['Predicting Future Sales [Shi Wei]', 'Predicting Customer Spending [Ernest]', 'Predicting Customer Churn [Gwyneth]', 'Uplift Analysis [Guo Fung]', 'Demand Forecasting [Kok Kai]'])
     
 with tab1:
+    st.header("Will be presented in another streamlit")
+
+with tab2:
     st.title('Predicting Customer Spending :moneybag:')
 
     st.markdown("This tab allows the Tasty Bytes's team to analyse and predict customer spending, to aid them to achieve their goal of 25% YoY growth in sales across 5 years.")
@@ -400,3 +403,10 @@ with tab1:
                     st.write("● This customer belongs to the High Spending Customers cluster, which means that they consistently spend a significant amount of money in a year.")
                 else:
                     st.write("● This customer belongs to the Low Spending Customers cluster, which means that they consistently spend a lesser amount of money in a year.")
+with tab3:
+    st.header("Will be presented in another streamlit")
+
+with tab4:
+    st.header("Will be presented in another streamlit")
+with tab5:
+    st.header("Will be presented in another streamlit")
